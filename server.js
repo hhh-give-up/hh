@@ -8,17 +8,13 @@ const cors = require("cors");
 const rateLimit = require("express-rate-limit");
 
 const app = express();
-app.use(express.json());
+
 console.log("",!!process.env.DEEPSEEK_API_KEY);
 
 // CORS：允许你的 GitHub Pages 域名
-app.use(cors({
-  origin: [
-    "https://hhh-give-up.github.io/hh",
-    "http://localhost:5500",
-    "http://127.0.0.1:5500"
-  ]
-}));
+app.use(cors)））;
+app.use(express.json());
+
 
 // ====== 限流：单 IP 每日 30 次 + 全局每日 2000 次 ======
 const DAY = 24 * 60 * 60 * 1000;
