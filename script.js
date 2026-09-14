@@ -7,7 +7,7 @@
  */
 
 // ====== 配置区 ======
-const API_BASE = "https://hh-lp1e.onrender.com/"; // ← 部署后改这里
+const API_BASE = "https://hh-lp1e.onrender.com"; // ← 部署后改这里
 // ===================
 
 // ====== 全局状态 ======
