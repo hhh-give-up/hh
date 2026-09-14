@@ -13,7 +13,7 @@ app.use(express.json());
 // CORS：允许你的 GitHub Pages 域名
 app.use(cors({
   origin: [
-    "https://你的用户名.github.io",
+    "https://hhh-give-up.github.io/hh",
     "http://localhost:5500",
     "http://127.0.0.1:5500"
   ]
