@@ -9,6 +9,7 @@ const rateLimit = require("express-rate-limit");
 
 const app = express();
 app.use(express.json());
+console.log("",!!process.env.DEEPSEEK_API_KEY);
 
 // CORS：允许你的 GitHub Pages 域名
 app.use(cors({
